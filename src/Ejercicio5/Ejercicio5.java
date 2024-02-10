@@ -1,19 +1,16 @@
 package Ejercicio5;
-//Clase
-public class Ejercicio5{
+
+public class Ejercicio5 {
     private int roomNumber;
     private double pricePerNight;
     private boolean availability;
     private String huesped;
 
-
-    //Constructor
-
     public Ejercicio5(int roomNumber, double pricePerNight, boolean availability, String huesped) {
         this.roomNumber = roomNumber;
         this.pricePerNight = pricePerNight;
         this.availability = availability;
-        this.huesped= huesped;
+        this.huesped = huesped;
     }
 
     public int getRoomNumber() {
@@ -47,4 +44,13 @@ public class Ejercicio5{
     public void setHuesped(String huesped) {
         this.huesped = huesped;
     }
+    public String getDetails() {
+        return "Room Number: " + this.roomNumber +
+                ", Price: " + this.pricePerNight +
+                ", Availability: " + (this.isAvailability() ? "Available" : "Not Available") +
+                ", Guest: " + this.huesped;
+    }
+
+
+
 }

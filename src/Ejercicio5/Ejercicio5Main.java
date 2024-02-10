@@ -1,26 +1,28 @@
-package  Ejercicio5;
+package Ejercicio5;
 
 import javax.swing.*;
 
 public class Ejercicio5Main {
     public static void main(String[] args) {
         Ejercicio5[] rooms = new Ejercicio5[5];
-        for (int i = 0; i < 5; i++) {
-            rooms[i] = new Ejercicio5(i+1, 100.0, true, "Guest" + (i+1));
-        }
+        rooms[0] = new Ejercicio5(0, 100.0, true, "Guest");
+        rooms[1] = new Ejercicio5(1, 200.0, true, "Guest");
+        rooms[2] = new Ejercicio5(2, 1200.0, true, "Guest");
+        rooms[3] = new Ejercicio5(3, 1100.0, true, "Guest");
+        rooms[4] = new Ejercicio5(4, 1600.0, true, "Guest");
 
-        // Print room details
+
         for (Ejercicio5 room : rooms) {
-            JOptionPane.showMessageDialog(null, "Room Number: " + room.getRoomNumber() + "\nPrice per Night: " + room.getPricePerNight() + "\nAvailability: " + room.isAvailability() + "\nGuests: " + room.getHuesped());
+            JOptionPane.showMessageDialog(null,room.getDetails());
         }
 
-        // Modify room details
-        rooms[0].setPricePerNight(120.0);
+
+        rooms[0].setPricePerNight(150.0);
         rooms[0].setAvailability(false);
 
-        // Print room details after modification.showMessageDialog(null, "After modification:");
+
         for (Ejercicio5 room : rooms) {
-            JOptionPane.showMessageDialog(null, "Room Number: " + room.getRoomNumber() + "\nPrice per Night: " + room.getPricePerNight() + "\nAvailability: " + room.isAvailability() + "\nGuests: " + room.getHuesped());
+            JOptionPane.showMessageDialog(null,room.getDetails());
         }
     }
 }
