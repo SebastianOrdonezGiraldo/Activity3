@@ -1,4 +1,4 @@
-package PetShop;
+package Ejercicio1;
 
 public class Pet {
     //ATRIBUTOS
