@@ -44,13 +44,13 @@ public class Ejercicio5 {
     public void setHuesped(String huesped) {
         this.huesped = huesped;
     }
+
     public String getDetails() {
-        return "Room Number: " + this.roomNumber +
-                ", Price: " + this.pricePerNight +
-                ", Availability: " + (this.isAvailability() ? "Available" : "Not Available") +
-                ", Guest: " + this.huesped;
+        return "Room Number: " + this.roomNumber + "\n" +
+                "Price: " + this.pricePerNight + "\n" +
+                "Availability: " + (this.isAvailability() ? "Available" : "Not Available") + "\n"+
+                "Guest: " + this.huesped;
+
+
     }
-
-
-
 }
