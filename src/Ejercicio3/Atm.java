@@ -46,7 +46,7 @@ public class Atm {
     public void changePassword(){
         if (password.equals(password)) {
             System.out.println("Ingrese clave nueva");
-            String nuevaClave = scanner.nextLine();
+           // String nuevaClave = scanner.nextLine();
             System.out.println("La clave ha sido cambiada");
         }else {
             System.out.println("Clave incorrecta");
